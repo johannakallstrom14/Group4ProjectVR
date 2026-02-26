@@ -17,6 +17,7 @@
   <Project Path="Unity.XR.OpenXR.csproj" />
   <Project Path="Unity.Burst.csproj" />
   <Project Path="Unity.Services.Core.Environments.Editor.csproj" />
+  <Project Path="Unity.RenderPipelines.HighDefinition.Editor.csproj" />
   <Project Path="Unity.VisualScripting.Flow.Editor.csproj" />
   <Project Path="Unity.XR.Interaction.Toolkit.csproj" />
   <Project Path="Unity.Services.Analytics.csproj" />
@@ -71,6 +72,7 @@
   <Project Path="Unity.VisualScripting.SettingsProvider.Editor.csproj" />
   <Project Path="Purchasing.Common.csproj" />
   <Project Path="Assembly-CSharp-Editor.csproj" />
+  <Project Path="Unity.VSCode.Editor.csproj" />
   <Project Path="Unity.Services.Core.Threading.csproj" />
   <Project Path="Unity.Settings.Editor.csproj" />
   <Project Path="Unity.InputSystem.TestFramework.csproj" />
