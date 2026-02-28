@@ -226,8 +226,8 @@ Transform:
   m_GameObject: {fileID: 106429150}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 702.2, y: 16.6, z: 170.5}
-  m_LocalScale: {x: 4.6710854, y: 4.6710854, z: 4.6710854}
+  m_LocalPosition: {x: 701.3, y: 1.1, z: 172.6}
+  m_LocalScale: {x: 5.7, y: 4.6710854, z: 4.6710854}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -466,7 +466,7 @@ Transform:
   m_GameObject: {fileID: 325902713}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 729.9, y: 4, z: 34.1}
+  m_LocalPosition: {x: 729.9, y: 6, z: -170}
   m_LocalScale: {x: 38.862774, y: 2.3710897, z: 18.689732}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -494,7 +494,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 17
+      value: 6.96
       objectReference: {fileID: 0}
     - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -641,7 +641,7 @@ Terrain:
   m_TreeCrossFadeLength: 5
   m_TreeMaximumFullLODCount: 50
   m_DetailObjectDistance: 10
-  m_DetailObjectDensity: 0.5
+  m_DetailObjectDensity: 0.081
   m_HeightmapPixelError: 5
   m_SplatMapDistance: 1000
   m_HeightmapMinimumLODSimplification: 0
