@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 92c87ef0dabe0ee44b9e9e2b3e9ecde9
+guid: 00ad17d337a65f940adcf6e7def9f43e
 DefaultImporter:
   externalObjects: {}
   userData: 
@@ -7,8 +7,8 @@ DefaultImporter:
   assetBundleVariant: 
 AssetOrigin:
   serializedVersion: 1
-  productId: 302515
-  packageName: Low Poly NATURE-PACK
+  productId: 260042
+  packageName: Idyllic Fantasy Nature
   packageVersion: 1.0
-  assetPath: Assets/lowpoly-nature/lowpoly-nature/scene/scene.unity
-  uploadId: 708544
+  assetPath: Assets/Idyllic Fantasy Nature/Demo/Demo.unity
+  uploadId: 617545
