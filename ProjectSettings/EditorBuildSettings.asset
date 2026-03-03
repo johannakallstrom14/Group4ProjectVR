@@ -8,7 +8,14 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Scene0.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 0
+    path: Assets/Scenes/MainScene.unity
+    guid: 92c87ef0dabe0ee44b9e9e2b3e9ecde9
+  - enabled: 1
+    path: Assets/Scenes/handtracking.unity
+    guid: 9dc310ca337e9c34ab56e755beb8870d
   m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 4932c3cd8c88d6041aa1cfa547e21626, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: b6954a39e9d4741139226554fedcc266, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: e498b1afe4ece4977ad034f1dd667001, type: 2}
