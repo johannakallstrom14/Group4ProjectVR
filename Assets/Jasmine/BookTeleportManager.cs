@@ -9,16 +9,14 @@ public class BookTeleportManager : MonoBehaviour
     public Transform targetLocation;  
     public Material nextSkybox;
 
-    [Header("Transition Settings")]
-    public float delayAfterAudio = 1.0f;
-    private bool hasBeenTriggered = false;
+    private bool sequenceStarted = false;
 
-    // This is the function we will link to the Meta Touch/Grab event
-    public void OnBookTouched()
+    // Denna funktion anropas när man trycker på knappen
+    public void StartTeleportSequence()
     {
-        if (!hasBeenTriggered)
+        if (!sequenceStarted)
         {
-            hasBeenTriggered = true;
+            sequenceStarted = true;
             bookAudio.Play();
             StartCoroutine(WaitAndTeleport());
         }
@@ -26,14 +24,10 @@ public class BookTeleportManager : MonoBehaviour
 
     IEnumerator WaitAndTeleport()
     {
-        // Wait until the audio actually starts
-        yield return new WaitUntil(() => bookAudio.isPlaying);
-
-        // Wait until the audio stops playing
+        // Vänta tills ljudet spelat klart
         yield return new WaitWhile(() => bookAudio.isPlaying);
-
-        yield return new WaitForSeconds(delayAfterAudio);
-
+        
+        // Utför teleportation
         TeleportPlayer();
         ChangeEnvironment();
     }
@@ -42,10 +36,8 @@ public class BookTeleportManager : MonoBehaviour
     {
         CharacterController cc = playerTransform.GetComponent<CharacterController>();
         if (cc != null) cc.enabled = false; 
-
         playerTransform.position = targetLocation.position;
         playerTransform.rotation = targetLocation.rotation;
-
         if (cc != null) cc.enabled = true; 
     }
 
@@ -54,7 +46,6 @@ public class BookTeleportManager : MonoBehaviour
         if (nextSkybox != null)
         {
             RenderSettings.skybox = nextSkybox;
-            // Note: For Quest APK, keep an eye on performance with this line
             DynamicGI.UpdateEnvironment(); 
         }
     }
