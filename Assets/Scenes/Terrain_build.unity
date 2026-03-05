@@ -4492,7 +4492,7 @@ MonoBehaviour:
   m_RendererIndex: -1
   m_VolumeLayerMask:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 0
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
   m_RenderPostProcessing: 0
@@ -9698,12 +9698,12 @@ Terrain:
   m_Enabled: 1
   serializedVersion: 6
   m_TerrainData: {fileID: 15600000, guid: 1844ec013afb34dee8c92ffb667ee4e5, type: 2}
-  m_TreeDistance: 2730
+  m_TreeDistance: 200
   m_TreeBillboardDistance: 50
-  m_TreeCrossFadeLength: 5
+  m_TreeCrossFadeLength: 20
   m_TreeMaximumFullLODCount: 50
-  m_DetailObjectDistance: 457
-  m_DetailObjectDensity: 0.895
+  m_DetailObjectDistance: 80
+  m_DetailObjectDensity: 0.184
   m_HeightmapPixelError: 5
   m_SplatMapDistance: 1000
   m_HeightmapMinimumLODSimplification: 0
@@ -17351,6 +17351,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[BuildingBlock] OVRInteractionComprehensive'
       objectReference: {fileID: 0}
+    - target: {fileID: 4148778239110795873, guid: 0a7d2469f24041c4284c66706f84c45e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4397664628265918113, guid: 0a7d2469f24041c4284c66706f84c45e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -18097,15 +18101,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1449072468}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.01883299, y: -0.9809901, z: 0.19145519, w: 0.025467213}
-  m_LocalPosition: {x: -148, y: 3.1000018, z: 62.7}
+  m_LocalRotation: {x: -0.00829921, y: -0.84591144, z: -0.03506644, w: -0.5321047}
+  m_LocalPosition: {x: -149.15, y: 3.01, z: 63.63}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 270103348}
   - {fileID: 1392031707}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 22.123, y: 542.645, z: -1.682}
+  m_LocalEulerAnglesHint: {x: -2.894, y: 475.583, z: 2.948}
 --- !u!1001 &1450341869
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19445,13 +19449,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1591731576}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.00000000942964, y: -0.6846345, z: 9.3132246e-10, w: -0.72888654}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 270103348}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -273.586, z: 0}
 --- !u!20 &1591731578
 Camera:
   m_ObjectHideFlags: 0
@@ -19500,7 +19504,7 @@ Camera:
   m_AllowMSAA: 1
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
+  m_OcclusionCulling: 0
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
 --- !u!81 &1591731579
@@ -21019,7 +21023,7 @@ Transform:
   m_GameObject: {fileID: 1728424151}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 53.55588, y: 6.7945814, z: -5.1494102}
+  m_LocalPosition: {x: -151.3, y: 6.7945814, z: 42.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
