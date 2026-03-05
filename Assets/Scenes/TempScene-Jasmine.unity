@@ -12099,6 +12099,12 @@ MonoBehaviour:
   _interactableView: {fileID: 216995783}
   _whenHover:
     m_PersistentCalls:
+      m_Calls: []
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelect:
+    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 216995773}
         m_TargetAssemblyTypeName: BookTeleportManager, Assembly-CSharp
@@ -12112,12 +12118,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _whenUnhover:
-    m_PersistentCalls:
-      m_Calls: []
-  _whenSelect:
-    m_PersistentCalls:
-      m_Calls: []
   _whenUnselect:
     m_PersistentCalls:
       m_Calls: []
@@ -55978,11 +55978,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1483132109}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1103067203 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2658825551322919470, guid: fd5ab67aa510888499f842d51f660a4a, type: 3}
-  m_PrefabInstance: {fileID: 1462948984}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1103272845
 GameObject:
   m_ObjectHideFlags: 0
@@ -67795,8 +67790,7 @@ Transform:
   m_LocalPosition: {x: 163.773, y: 20.753, z: 169.276}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1103067203}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1313599204
@@ -110689,3 +110683,5 @@ SceneRoots:
   - {fileID: 864248807}
   - {fileID: 1772323189}
   - {fileID: 478398526}
+  - {fileID: 216995771}
+  - {fileID: 1313599203}
