@@ -5,57 +5,57 @@ public class BookTeleportManager : MonoBehaviour
 {
     [Header("References")]
     public AudioSource bookAudio;
-    public Transform playerTransform; // Drag your OVRCameraRig here
-    public Transform targetLocation;  // Drag a Transform/Empty GameObj for destination
+    public Transform playerTransform; 
+    public Transform targetLocation;  
     public Material nextSkybox;
 
     [Header("Transition Settings")]
-    public float delayAfterAudio = 1.0f; // Brief pause for dramatic effect
+    public float delayAfterAudio = 1.0f;
+    private bool hasBeenTriggered = false;
 
-    void Start()
+    // This is the function we will link to the Meta Touch/Grab event
+    public void OnBookTouched()
     {
-        // Start the monitoring routine
-        StartCoroutine(WaitAndTeleport());
+        if (!hasBeenTriggered)
+        {
+            hasBeenTriggered = true;
+            bookAudio.Play();
+            StartCoroutine(WaitAndTeleport());
+        }
     }
 
     IEnumerator WaitAndTeleport()
     {
-        // 1. Wait until the audio actually starts playing (if it hasn't yet)
+        // Wait until the audio actually starts
         yield return new WaitUntil(() => bookAudio.isPlaying);
 
-        // 2. Wait until the audio stops playing
+        // Wait until the audio stops playing
         yield return new WaitWhile(() => bookAudio.isPlaying);
 
-        // 3. Small delay after the voice ends
         yield return new WaitForSeconds(delayAfterAudio);
 
-        // 4. Perform the Teleport
         TeleportPlayer();
-
-        // 5. Change the Skybox
         ChangeEnvironment();
     }
-void TeleportPlayer()
-{
-    CharacterController cc = playerTransform.GetComponent<CharacterController>();
-    if (cc != null) cc.enabled = false; // Disable temporarily to "warp"
 
-    playerTransform.position = targetLocation.position;
-    playerTransform.rotation = targetLocation.rotation;
+    void TeleportPlayer()
+    {
+        CharacterController cc = playerTransform.GetComponent<CharacterController>();
+        if (cc != null) cc.enabled = false; 
 
-    if (cc != null) cc.enabled = true; // Re-enable
-}
-  void ChangeEnvironment()
-{
-    if (nextSkybox != null)
-    {
-        RenderSettings.skybox = nextSkybox;
-        // This is the crucial line:
-        DynamicGI.UpdateEnvironment(); 
+        playerTransform.position = targetLocation.position;
+        playerTransform.rotation = targetLocation.rotation;
+
+        if (cc != null) cc.enabled = true; 
     }
-    else 
+
+    void ChangeEnvironment()
     {
-        Debug.LogError("Next Skybox is missing from the Inspector!");
+        if (nextSkybox != null)
+        {
+            RenderSettings.skybox = nextSkybox;
+            // Note: For Quest APK, keep an eye on performance with this line
+            DynamicGI.UpdateEnvironment(); 
+        }
     }
-}
 }
