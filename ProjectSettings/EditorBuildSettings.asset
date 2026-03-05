@@ -11,9 +11,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/MainScene.unity
     guid: 00ad17d337a65f940adcf6e7def9f43e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TempScene-Jasmine.unity
     guid: ae62d3521691646178bc8a0e28441a27
+  - enabled: 1
+    path: Assets/Scenes/TempScene-Johanna.unity
+    guid: 3534f28c450ff4ebea843b16cc265d9e
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: b6954a39e9d4741139226554fedcc266, type: 2}
