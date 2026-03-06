@@ -22513,8 +22513,8 @@ MonoBehaviour:
   - {fileID: 1621437077}
   - {fileID: 1237466758}
   - {fileID: 1473733952}
-  _handSkeletonProvider: {fileID: 0}
-  _trackingToWorldTransformer: {fileID: 0}
+  _handSkeletonProvider: {fileID: 1759067697}
+  _trackingToWorldTransformer: {fileID: 1981848755}
 --- !u!114 &738171185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27837,8 +27837,8 @@ MonoBehaviour:
   - {fileID: 2057461041}
   - {fileID: 905576992}
   - {fileID: 1614324310}
-  _handSkeletonProvider: {fileID: 0}
-  _trackingToWorldTransformer: {fileID: 0}
+  _handSkeletonProvider: {fileID: 1759067697}
+  _trackingToWorldTransformer: {fileID: 1981848755}
 --- !u!114 &922662388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53571,6 +53571,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1758106051}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1759067697 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8431995533123004903, guid: 0a7d2469f24041c4284c66706f84c45e, type: 3}
+  m_PrefabInstance: {fileID: 1421663412}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86bd0d3098d25db4c9c839739557480b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1763070021
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54150,7 +54161,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: _enableDynamicResolution
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: enableCoreMetricsRelease
@@ -54163,6 +54174,14 @@ PrefabInstance:
     - target: {fileID: 11400000, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: controllerDrivenHandPosesType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+      propertyPath: requestScenePermissionOnStartup
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+      propertyPath: SimultaneousHandsAndControllersEnabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400010, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: usePerEyeCameras
@@ -61371,6 +61390,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2836439255435353027, guid: a86af659c52a1f54c924985f5d11a2b9, type: 3}
   m_PrefabInstance: {fileID: 1979896054}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1981848755 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1817200970410550060, guid: 0a7d2469f24041c4284c66706f84c45e, type: 3}
+  m_PrefabInstance: {fileID: 1421663412}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 998a5646185efb9488265f3a2f35a99a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1985736148
 GameObject:
   m_ObjectHideFlags: 0
