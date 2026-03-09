@@ -1,11 +1,12 @@
 using UnityEngine;
-using Oculus.Interaction;
 
 public class PondMaterialSwap : MonoBehaviour
 {
     [SerializeField] public Renderer pondRenderer;
-    [SerializeField] public Material normalMaterial;
     [SerializeField] public Material magicalMaterial;
+    [SerializeField] public Transform fingertip;
+    [SerializeField] public float touchDistance = 0.05f;
+
 
     private bool hasChanged = false;
 
@@ -14,15 +15,17 @@ public class PondMaterialSwap : MonoBehaviour
         pondRenderer = GetComponent<Renderer>();
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void Update()
     {
-        if (hasChanged)
+        if(hasChanged || pondRenderer == null || fingertip == null)
         {
             return;
         }
 
-        //Check if the object touching the pond is a hand
-        if (other.GetComponentInParent<PokeInteractor>() != null)
+        Vector3 closestPoint = pondRenderer.bounds.ClosestPoint(fingertip.position);
+        float distance = Vector3.Distance(fingertip.position, closestPoint);
+
+        if(distance <= touchDistance)
         {
             hasChanged = true;
             pondRenderer.material = magicalMaterial;
