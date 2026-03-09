@@ -3566,6 +3566,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6986371466421367663, guid: 124ad46aec1102e47a4cdae502be89aa, type: 3}
   m_PrefabInstance: {fileID: 414845817}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &415304867
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 415304868}
+  m_Layer: 0
+  m_Name: PlayerStart
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &415304868
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415304867}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 37.134, y: 2.104, z: 54.067}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &431599232
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24053,6 +24084,7 @@ GameObject:
   - component: {fileID: 1731905509}
   - component: {fileID: 1731905508}
   - component: {fileID: 1731905507}
+  - component: {fileID: 1731905512}
   m_Layer: 0
   m_Name: '[BuildingBlock] Camera Rig'
   m_TagString: Untagged
@@ -24213,7 +24245,7 @@ Transform:
   m_GameObject: {fileID: 1731905506}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 36.74, y: 2.72, z: 55.21}
+  m_LocalPosition: {x: 36.758, y: 2.441, z: 54.856}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -24221,6 +24253,19 @@ Transform:
   - {fileID: 1960090581}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &1731905512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1731905506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28a0c5ebcf5da7d4aaa7ad3982d2234c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ForceRigStart
+  startPoint: {fileID: 415304868}
 --- !u!1001 &1734003267
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31618,6 +31663,7 @@ SceneRoots:
   - {fileID: 1728424153}
   - {fileID: 1731905511}
   - {fileID: 1144185452}
+  - {fileID: 415304868}
   - {fileID: 2077319907}
   - {fileID: 1994981035}
   - {fileID: 1013762828}
