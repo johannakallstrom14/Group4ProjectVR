@@ -5,40 +5,49 @@ public class BookTeleportManager : MonoBehaviour
 {
     [Header("References")]
     public AudioSource bookAudio;
-    public Transform playerTransform; 
-    public Transform targetLocation;  
+    public Transform playerTransform;
+    public Transform targetLocation;
     public Material nextSkybox;
 
     private bool sequenceStarted = false;
 
-    // Denna funktion anropas när man trycker på knappen
-    public void StartTeleportSequence()
+    // This is the function you will link to your Fruit's "Select Exited" event
+    public void OnFruitPickedUp()
     {
         if (!sequenceStarted)
         {
             sequenceStarted = true;
-            bookAudio.Play();
+            Debug.Log("Fruit picked! Starting audio and teleport sequence...");
             StartCoroutine(WaitAndTeleport());
         }
     }
 
     IEnumerator WaitAndTeleport()
     {
-        // Vänta tills ljudet spelat klart
-        yield return new WaitWhile(() => bookAudio.isPlaying);
-        
-        // Utför teleportation
+        // Play the audio
+        if (bookAudio != null)
+        {
+            bookAudio.Play();
+            // Wait until the audio finishes
+            yield return new WaitWhile(() => bookAudio.isPlaying);
+        }
+
+        // Perform teleportation
         TeleportPlayer();
         ChangeEnvironment();
     }
 
     void TeleportPlayer()
     {
+        if (playerTransform == null || targetLocation == null) return;
+
         CharacterController cc = playerTransform.GetComponent<CharacterController>();
-        if (cc != null) cc.enabled = false; 
+        if (cc != null) cc.enabled = false;
+
         playerTransform.position = targetLocation.position;
         playerTransform.rotation = targetLocation.rotation;
-        if (cc != null) cc.enabled = true; 
+
+        if (cc != null) cc.enabled = true;
     }
 
     void ChangeEnvironment()
@@ -46,7 +55,7 @@ public class BookTeleportManager : MonoBehaviour
         if (nextSkybox != null)
         {
             RenderSettings.skybox = nextSkybox;
-            DynamicGI.UpdateEnvironment(); 
+            DynamicGI.UpdateEnvironment();
         }
     }
 }
