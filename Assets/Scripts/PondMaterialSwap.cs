@@ -1,4 +1,5 @@
 using UnityEngine;
+using Oculus.Interaction;
 
 public class PondMaterialSwap : MonoBehaviour
 {
@@ -21,7 +22,7 @@ public class PondMaterialSwap : MonoBehaviour
         }
 
         //Check if the object touching the pond is a hand
-        if (other.CompareTag("Hand"))
+        if (other.GetComponentInParent<PokeInteractor>() != null)
         {
             hasChanged = true;
             pondRenderer.material = magicalMaterial;
