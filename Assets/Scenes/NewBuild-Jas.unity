@@ -21391,7 +21391,7 @@ Transform:
   m_GameObject: {fileID: 949026355}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.12657247, z: -0, w: 0.9919574}
-  m_LocalPosition: {x: 1.955, y: 2.728, z: -1.611}
+  m_LocalPosition: {x: 1.955, y: 0.66, z: -1.611}
   m_LocalScale: {x: 6, y: 6, z: 6}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -23695,7 +23695,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1135682942
 Transform:
   m_ObjectHideFlags: 0
@@ -24174,7 +24174,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1149727205
 Transform:
   m_ObjectHideFlags: 0
@@ -27696,6 +27696,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BlossomTree_01
       objectReference: {fileID: 0}
+    - target: {fileID: 3435643351429671060, guid: fd5ab67aa510888499f842d51f660a4a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3522346245086181953, guid: fd5ab67aa510888499f842d51f660a4a, type: 3}
       propertyPath: m_DynamicOccludee
       value: 0
@@ -28467,7 +28471,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1502390956
 Transform:
   m_ObjectHideFlags: 0
@@ -29122,7 +29126,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1541501840
 Transform:
   m_ObjectHideFlags: 0
