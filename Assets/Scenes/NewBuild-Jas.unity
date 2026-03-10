@@ -4617,7 +4617,7 @@ Transform:
   m_GameObject: {fileID: 457642925}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.0083, y: 0, z: 0.0034}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5523,7 +5523,7 @@ Transform:
   m_GameObject: {fileID: 535979730}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.0719, y: 0.094, z: 0.0297}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6402,7 +6402,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FruitTreeTeleport
   playerTransform: {fileID: 1731905511}
   lakeLocation: {fileID: 753833917}
-  delayBeforeTeleport: 2
+  delayBeforeTeleport: 5
   teleportAudio: {fileID: 584913705}
   lakeSkybox: {fileID: 2100000, guid: 9803600998c48b140b2f7038d0fc2eb1, type: 2}
 --- !u!4 &584913707
@@ -16288,6 +16288,8 @@ GameObject:
   - component: {fileID: 949026357}
   - component: {fileID: 949026358}
   - component: {fileID: 949026359}
+  - component: {fileID: 949026361}
+  - component: {fileID: 949026360}
   m_Layer: 4
   m_Name: Cherry-AnchorArHand_1
   m_TagString: Untagged
@@ -16304,8 +16306,8 @@ Transform:
   m_GameObject: {fileID: 949026355}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.12657247, z: -0, w: 0.9919574}
-  m_LocalPosition: {x: 0.6199292, y: 3.4657714, z: 33.744427}
-  m_LocalScale: {x: 1.5611583, y: 1.5611583, z: 1.5611583}
+  m_LocalPosition: {x: 1.955, y: 2.728, z: -1.611}
+  m_LocalScale: {x: 6, y: 6, z: 6}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1433218141}
@@ -16390,6 +16392,81 @@ MonoBehaviour:
   _defaultInteractable: {fileID: 0}
   _timeOutInteractable: {fileID: 117087186}
   _timeOut: 2
+--- !u!114 &949026360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 949026355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c5c4419cf7e9f141a6f2359744bdfa8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlyingFruit
+  flyDirection: {x: 0, y: 1, z: 0}
+  speed: 2
+--- !u!114 &949026361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 949026355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.InteractableUnityEventWrapper
+  _interactableView: {fileID: 0}
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 949026360}
+        m_TargetAssemblyTypeName: FlyingFruit, Assembly-CSharp
+        m_MethodName: StartFlying
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 584913706}
+        m_TargetAssemblyTypeName: FruitTreeTeleport, Assembly-CSharp
+        m_MethodName: OnCherryGrabbed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &956831799
 GameObject:
   m_ObjectHideFlags: 0
@@ -17231,7 +17308,7 @@ Transform:
   m_GameObject: {fileID: 1024679947}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 49.47, y: 0.56, z: 34.69}
+  m_LocalPosition: {x: 50.11, y: 0.56, z: 35.79}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18472,6 +18549,8 @@ GameObject:
   - component: {fileID: 1135682943}
   - component: {fileID: 1135682944}
   - component: {fileID: 1135682945}
+  - component: {fileID: 1135682947}
+  - component: {fileID: 1135682946}
   m_Layer: 4
   m_Name: Cherry-AnchorArHand_2
   m_TagString: Untagged
@@ -18488,8 +18567,8 @@ Transform:
   m_GameObject: {fileID: 1135682941}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.12657247, z: -0, w: 0.9919574}
-  m_LocalPosition: {x: 0.6199292, y: 3.4657714, z: 33.744427}
-  m_LocalScale: {x: 1.5611583, y: 1.5611583, z: 1.5611583}
+  m_LocalPosition: {x: 1.505, y: 2.94, z: -1.272}
+  m_LocalScale: {x: 6, y: 6, z: 6}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1871525988}
@@ -18574,6 +18653,81 @@ MonoBehaviour:
   _defaultInteractable: {fileID: 0}
   _timeOutInteractable: {fileID: 117087186}
   _timeOut: 2
+--- !u!114 &1135682946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135682941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c5c4419cf7e9f141a6f2359744bdfa8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlyingFruit
+  flyDirection: {x: 0, y: 1, z: 0}
+  speed: 2
+--- !u!114 &1135682947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135682941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.InteractableUnityEventWrapper
+  _interactableView: {fileID: 0}
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1135682946}
+        m_TargetAssemblyTypeName: FlyingFruit, Assembly-CSharp
+        m_MethodName: StartFlying
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 584913706}
+        m_TargetAssemblyTypeName: FruitTreeTeleport, Assembly-CSharp
+        m_MethodName: OnCherryGrabbed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1144185447
 GameObject:
   m_ObjectHideFlags: 0
@@ -19347,7 +19501,7 @@ Transform:
   m_GameObject: {fileID: 1169449239}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.0836, y: -0.0224, z: 0.1049}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -22310,6 +22464,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cherry (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 48b7c3dc0142ade438e7d863e502e91b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23163,6 +23321,8 @@ GameObject:
   - component: {fileID: 1502390957}
   - component: {fileID: 1502390958}
   - component: {fileID: 1502390959}
+  - component: {fileID: 1502390961}
+  - component: {fileID: 1502390960}
   m_Layer: 4
   m_Name: Cherry-AnchorArHand_4
   m_TagString: Untagged
@@ -23179,8 +23339,8 @@ Transform:
   m_GameObject: {fileID: 1502390955}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.12657247, z: -0, w: 0.9919574}
-  m_LocalPosition: {x: 0.6199292, y: 3.4657714, z: 33.744427}
-  m_LocalScale: {x: 1.5611583, y: 1.5611583, z: 1.5611583}
+  m_LocalPosition: {x: 1.505, y: 2.94, z: -1.272}
+  m_LocalScale: {x: 6, y: 6, z: 6}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1463587599}
@@ -23265,6 +23425,81 @@ MonoBehaviour:
   _defaultInteractable: {fileID: 0}
   _timeOutInteractable: {fileID: 117087186}
   _timeOut: 2
+--- !u!114 &1502390960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1502390955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c5c4419cf7e9f141a6f2359744bdfa8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlyingFruit
+  flyDirection: {x: 0, y: 1, z: 0}
+  speed: 2
+--- !u!114 &1502390961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1502390955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.InteractableUnityEventWrapper
+  _interactableView: {fileID: 0}
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1502390960}
+        m_TargetAssemblyTypeName: FlyingFruit, Assembly-CSharp
+        m_MethodName: StartFlying
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 584913706}
+        m_TargetAssemblyTypeName: FruitTreeTeleport, Assembly-CSharp
+        m_MethodName: OnCherryGrabbed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &1505439825 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 970644637833668181, guid: 049d245a53f74e745a6b17c9ccfc1dc5, type: 3}
@@ -23741,6 +23976,8 @@ GameObject:
   - component: {fileID: 1541501841}
   - component: {fileID: 1541501842}
   - component: {fileID: 1541501843}
+  - component: {fileID: 1541501845}
+  - component: {fileID: 1541501844}
   m_Layer: 4
   m_Name: Cherry-AnchorArHand_3
   m_TagString: Untagged
@@ -23757,8 +23994,8 @@ Transform:
   m_GameObject: {fileID: 1541501839}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.12657247, z: -0, w: 0.9919574}
-  m_LocalPosition: {x: 0.6199292, y: 3.4657714, z: 33.744427}
-  m_LocalScale: {x: 1.5611583, y: 1.5611583, z: 1.5611583}
+  m_LocalPosition: {x: 1.505, y: 2.94, z: -1.272}
+  m_LocalScale: {x: 6, y: 6, z: 6}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 826423766}
@@ -23843,6 +24080,81 @@ MonoBehaviour:
   _defaultInteractable: {fileID: 0}
   _timeOutInteractable: {fileID: 117087186}
   _timeOut: 2
+--- !u!114 &1541501844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541501839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c5c4419cf7e9f141a6f2359744bdfa8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlyingFruit
+  flyDirection: {x: 0, y: 1, z: 0}
+  speed: 2
+--- !u!114 &1541501845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541501839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.InteractableUnityEventWrapper
+  _interactableView: {fileID: 0}
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1541501844}
+        m_TargetAssemblyTypeName: FlyingFruit, Assembly-CSharp
+        m_MethodName: StartFlying
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 584913706}
+        m_TargetAssemblyTypeName: FruitTreeTeleport, Assembly-CSharp
+        m_MethodName: OnCherryGrabbed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1551083434
 GameObject:
   m_ObjectHideFlags: 0
