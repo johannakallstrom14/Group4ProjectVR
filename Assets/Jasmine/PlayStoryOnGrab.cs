@@ -7,6 +7,8 @@ public class PlayStoryOnGrab : MonoBehaviour
 
     public void StartStory()
     {
+        Debug.Log("StartStory called");
+
         if (hasPlayed) return;
 
         hasPlayed = true;
