@@ -17,13 +17,13 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/TempScene-Johanna.unity
     guid: 3534f28c450ff4ebea843b16cc265d9e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/NewBuild-Jas.unity
     guid: 303c3f72ae3655747a6d1e52991cca70
   - enabled: 0
     path: "Assets/Samples/Meta XR Interaction \u200BSDK/85.0.0/Example Scenes/GestureExamples.unity"
     guid: 4ee2a082a0e621b49ab01667c66f1599
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Temp-Jo.unity
     guid: 7fcb5d7e313ac4a6aa8e1096a102475a
   m_configObjects:
