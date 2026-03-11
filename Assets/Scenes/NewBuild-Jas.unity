@@ -6105,6 +6105,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 901062355}
     m_Modifications:
+    - target: {fileID: -1653022013273449393, guid: b47fbfedcfef5414580d99c9115e2b8a, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 609b88a39b33848059b28327d2d86d66, type: 3}
+    - target: {fileID: -1653022013273449393, guid: b47fbfedcfef5414580d99c9115e2b8a, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 0.571
+      objectReference: {fileID: 0}
     - target: {fileID: 4658904325700070051, guid: b47fbfedcfef5414580d99c9115e2b8a, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -7102,7 +7110,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: dcf96e308f44b46d3a29f9a78fe90daf, type: 3}
+  m_Resource: {fileID: 8300000, guid: 7e0e25984724b4f2199aa89ad75e1f37, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -7178,7 +7186,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -9019,6 +9027,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 243868787}
     m_Modifications:
+    - target: {fileID: 6522474382794716610, guid: d16133c9c679fed4d9ee5dc47a5a11b9, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 609b88a39b33848059b28327d2d86d66, type: 3}
+    - target: {fileID: 6522474382794716610, guid: d16133c9c679fed4d9ee5dc47a5a11b9, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 0.508
+      objectReference: {fileID: 0}
     - target: {fileID: 8299274384004940590, guid: d16133c9c679fed4d9ee5dc47a5a11b9, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -20740,6 +20756,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1723997372}
     m_Modifications:
+    - target: {fileID: 6522474382794716610, guid: d16133c9c679fed4d9ee5dc47a5a11b9, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 609b88a39b33848059b28327d2d86d66, type: 3}
     - target: {fileID: 8299274384004940590, guid: d16133c9c679fed4d9ee5dc47a5a11b9, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -22660,6 +22680,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 241571415}
     m_Modifications:
+    - target: {fileID: 6522474382794716610, guid: d16133c9c679fed4d9ee5dc47a5a11b9, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 609b88a39b33848059b28327d2d86d66, type: 3}
+    - target: {fileID: 6522474382794716610, guid: d16133c9c679fed4d9ee5dc47a5a11b9, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 0.503
+      objectReference: {fileID: 0}
     - target: {fileID: 8299274384004940590, guid: d16133c9c679fed4d9ee5dc47a5a11b9, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -23185,7 +23213,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: dcf96e308f44b46d3a29f9a78fe90daf, type: 3}
+  m_Resource: {fileID: 8300000, guid: 7e0e25984724b4f2199aa89ad75e1f37, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -23261,7 +23289,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -25835,6 +25863,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1924936652}
     m_Modifications:
+    - target: {fileID: -1653022013273449393, guid: b47fbfedcfef5414580d99c9115e2b8a, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 609b88a39b33848059b28327d2d86d66, type: 3}
     - target: {fileID: 4658904325700070051, guid: b47fbfedcfef5414580d99c9115e2b8a, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -34988,7 +35020,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: dcf96e308f44b46d3a29f9a78fe90daf, type: 3}
+  m_Resource: {fileID: 8300000, guid: 5264ef0ab6bf04ae0a8e12849d29daae, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -35034,7 +35066,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -36487,6 +36519,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8733394477556809500, guid: 62c8bc523ec0f6a45ab78441f35bed00, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 5264ef0ab6bf04ae0a8e12849d29daae, type: 3}
     - target: {fileID: 8733394477556809500, guid: 62c8bc523ec0f6a45ab78441f35bed00, type: 3}
       propertyPath: m_PlayOnAwake
       value: 0
