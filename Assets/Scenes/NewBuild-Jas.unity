@@ -641,6 +641,7 @@ GameObject:
   - component: {fileID: 34003662}
   - component: {fileID: 34003665}
   - component: {fileID: 34003666}
+  - component: {fileID: 34003667}
   m_Layer: 0
   m_Name: CenterEyeAnchor
   m_TagString: MainCamera
@@ -775,11 +776,11 @@ AudioSource:
   m_GameObject: {fileID: 34003661}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -3125234331467820484, guid: 8e9c9ec5e6acb4c5a8161888601e61ad, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: ca00880d4cb924f5aac49e47776f5ee1, type: 3}
+  m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.345
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -863,6 +864,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &34003667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 34003661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5a4ccf8ce7924dfd8b55966d0fdaa01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GlobalAudioManager
 --- !u!1 &34209375
 GameObject:
   m_ObjectHideFlags: 0
@@ -7211,7 +7224,7 @@ AudioSource:
   m_GameObject: {fileID: 584913704}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -3125234331467820484, guid: 8e9c9ec5e6acb4c5a8161888601e61ad, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 7e0e25984724b4f2199aa89ad75e1f37, type: 3}
   m_PlayOnAwake: 0
@@ -7259,7 +7272,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -7311,9 +7324,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0883976e2bb704461925177118c3e004, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BookTeleportManager
-  bookAudio: {fileID: 584913708}
+  teleportClip: {fileID: 8300000, guid: 7e0e25984724b4f2199aa89ad75e1f37, type: 3}
   playerTransform: {fileID: 1731905511}
   targetLocation: {fileID: 753833917}
+  delayAfterAudio: 0.5
   nextSkybox: {fileID: 2100000, guid: 9803600998c48b140b2f7038d0fc2eb1, type: 2}
 --- !u!1001 &593477352
 PrefabInstance:
@@ -32478,7 +32492,7 @@ AudioSource:
   m_GameObject: {fileID: 1352323843}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -3125234331467820484, guid: 8e9c9ec5e6acb4c5a8161888601e61ad, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 7e0e25984724b4f2199aa89ad75e1f37, type: 3}
   m_PlayOnAwake: 0
@@ -32578,9 +32592,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0883976e2bb704461925177118c3e004, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BookTeleportManager
-  bookAudio: {fileID: 1352323844}
+  teleportClip: {fileID: 8300000, guid: 7e0e25984724b4f2199aa89ad75e1f37, type: 3}
   playerTransform: {fileID: 1731905511}
   targetLocation: {fileID: 753833917}
+  delayAfterAudio: 0.5
   nextSkybox: {fileID: 2100000, guid: 9803600998c48b140b2f7038d0fc2eb1, type: 2}
 --- !u!1001 &1367067947
 PrefabInstance:
@@ -33303,9 +33318,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0883976e2bb704461925177118c3e004, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BookTeleportManager
-  bookAudio: {fileID: 1434035693}
+  teleportClip: {fileID: 0}
   playerTransform: {fileID: 1731905511}
   targetLocation: {fileID: 753833917}
+  delayAfterAudio: 0.5
   nextSkybox: {fileID: 2100000, guid: 01a65cffd361a9842b13d14348c7f924, type: 2}
 --- !u!114 &1434035695
 MonoBehaviour:
@@ -35599,7 +35615,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1562376693}
-  - component: {fileID: 1562376692}
   - component: {fileID: 1562376691}
   m_Layer: 0
   m_Name: AudioManager
@@ -35615,13 +35630,13 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1562376690}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 5204568989347907392, guid: 8e9c9ec5e6acb4c5a8161888601e61ad, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
-  m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Resource: {fileID: 8300000, guid: ca00880d4cb924f5aac49e47776f5ee1, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.213
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -35705,23 +35720,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1562376692
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1562376690}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0d0acb13bab08c4285e507c789ed132, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AudioManager
-  audioSource: {fileID: 1562376691}
-  clips:
-  - {fileID: 8300000, guid: dcf96e308f44b46d3a29f9a78fe90daf, type: 3}
-  - {fileID: 8300000, guid: dcf96e308f44b46d3a29f9a78fe90daf, type: 3}
-  - {fileID: 8300000, guid: dcf96e308f44b46d3a29f9a78fe90daf, type: 3}
 --- !u!4 &1562376693
 Transform:
   m_ObjectHideFlags: 0
@@ -35731,7 +35729,7 @@ Transform:
   m_GameObject: {fileID: 1562376690}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 51.08174, y: 0.72822, z: 34.29984}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -45048,7 +45046,7 @@ AudioSource:
   m_GameObject: {fileID: 2134530520}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -3125234331467820484, guid: 8e9c9ec5e6acb4c5a8161888601e61ad, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 5264ef0ab6bf04ae0a8e12849d29daae, type: 3}
   m_PlayOnAwake: 0
@@ -45148,9 +45146,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0883976e2bb704461925177118c3e004, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BookTeleportManager
-  bookAudio: {fileID: 2134530525}
+  teleportClip: {fileID: 8300000, guid: 5264ef0ab6bf04ae0a8e12849d29daae, type: 3}
   playerTransform: {fileID: 1731905511}
   targetLocation: {fileID: 1024679948}
+  delayAfterAudio: 0.5
   nextSkybox: {fileID: 2100000, guid: 01a65cffd361a9842b13d14348c7f924, type: 2}
 --- !u!114 &2134530527
 MonoBehaviour:
@@ -46470,6 +46469,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 01a65cffd361a9842b13d14348c7f924, type: 2}
     - target: {fileID: 883617958889312903, guid: 62c8bc523ec0f6a45ab78441f35bed00, type: 3}
+      propertyPath: teleportClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5264ef0ab6bf04ae0a8e12849d29daae, type: 3}
+    - target: {fileID: 883617958889312903, guid: 62c8bc523ec0f6a45ab78441f35bed00, type: 3}
       propertyPath: targetLocation
       value: 
       objectReference: {fileID: 1024679948}
@@ -46558,8 +46561,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8733394477556809500, guid: 62c8bc523ec0f6a45ab78441f35bed00, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -3125234331467820484, guid: 8e9c9ec5e6acb4c5a8161888601e61ad, type: 2}
+    - target: {fileID: 8733394477556809500, guid: 62c8bc523ec0f6a45ab78441f35bed00, type: 3}
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8733394477556809500, guid: 62c8bc523ec0f6a45ab78441f35bed00, type: 3}
       propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
