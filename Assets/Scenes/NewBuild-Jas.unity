@@ -1247,6 +1247,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 901062355}
     m_Modifications:
+    - target: {fileID: -1653022013273449393, guid: 4c10bc37c0e8b774387330f749138159, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 609b88a39b33848059b28327d2d86d66, type: 3}
+    - target: {fileID: -1653022013273449393, guid: 4c10bc37c0e8b774387330f749138159, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4658904325700070051, guid: 4c10bc37c0e8b774387330f749138159, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1299,6 +1307,14 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 7410389675181900697, guid: 4c10bc37c0e8b774387330f749138159, type: 3}
+      propertyPath: _volume
+      value: 0.442
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410389675181900697, guid: 4c10bc37c0e8b774387330f749138159, type: 3}
+      propertyPath: _audioSource
+      value: 
+      objectReference: {fileID: 51783242}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1320,6 +1336,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 925ef87c5bafc37469a2f7ec825dee4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &51783242 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: -1653022013273449393, guid: 4c10bc37c0e8b774387330f749138159, type: 3}
+  m_PrefabInstance: {fileID: 51783239}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &53743620
 GameObject:
   m_ObjectHideFlags: 0
@@ -8234,8 +8255,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 609b88a39b33848059b28327d2d86d66, type: 3}
     - target: {fileID: -1653022013273449393, guid: b47fbfedcfef5414580d99c9115e2b8a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1653022013273449393, guid: b47fbfedcfef5414580d99c9115e2b8a, type: 3}
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
-      value: 0.571
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4658904325700070051, guid: b47fbfedcfef5414580d99c9115e2b8a, type: 3}
       propertyPath: m_RootOrder
@@ -8289,6 +8314,14 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 7410389675181900697, guid: b47fbfedcfef5414580d99c9115e2b8a, type: 3}
+      propertyPath: _volume
+      value: 0.438
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410389675181900697, guid: b47fbfedcfef5414580d99c9115e2b8a, type: 3}
+      propertyPath: _audioSource
+      value: 
+      objectReference: {fileID: 257529268}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8310,6 +8343,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 925ef87c5bafc37469a2f7ec825dee4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &257529268 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: -1653022013273449393, guid: b47fbfedcfef5414580d99c9115e2b8a, type: 3}
+  m_PrefabInstance: {fileID: 257529265}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &264052842
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10033,6 +10071,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2041601010}
     m_Modifications:
+    - target: {fileID: 6151298055800859156, guid: 13264d633d3544946b062a9df1e2e40f, type: 3}
+      propertyPath: _volume
+      value: 0.447
+      objectReference: {fileID: 0}
+    - target: {fileID: 6151298055800859156, guid: 13264d633d3544946b062a9df1e2e40f, type: 3}
+      propertyPath: _audioSource
+      value: 
+      objectReference: {fileID: 385411487}
+    - target: {fileID: 6522474382794716610, guid: 13264d633d3544946b062a9df1e2e40f, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 609b88a39b33848059b28327d2d86d66, type: 3}
+    - target: {fileID: 6522474382794716610, guid: 13264d633d3544946b062a9df1e2e40f, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6522474382794716610, guid: 13264d633d3544946b062a9df1e2e40f, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8299274384004940590, guid: 13264d633d3544946b062a9df1e2e40f, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -10106,6 +10164,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 925ef87c5bafc37469a2f7ec825dee4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &385411487 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6522474382794716610, guid: 13264d633d3544946b062a9df1e2e40f, type: 3}
+  m_PrefabInstance: {fileID: 385411484}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &390970977
 GameObject:
   m_ObjectHideFlags: 0
@@ -11670,8 +11733,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 609b88a39b33848059b28327d2d86d66, type: 3}
     - target: {fileID: -1653022013273449393, guid: b47fbfedcfef5414580d99c9115e2b8a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1653022013273449393, guid: b47fbfedcfef5414580d99c9115e2b8a, type: 3}
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
-      value: 0.571
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4658904325700070051, guid: b47fbfedcfef5414580d99c9115e2b8a, type: 3}
       propertyPath: m_RootOrder
@@ -11725,6 +11792,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 7410389675181900697, guid: b47fbfedcfef5414580d99c9115e2b8a, type: 3}
+      propertyPath: _audioSource
+      value: 
+      objectReference: {fileID: 530311108}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11746,6 +11817,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 925ef87c5bafc37469a2f7ec825dee4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &530311108 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: -1653022013273449393, guid: b47fbfedcfef5414580d99c9115e2b8a, type: 3}
+  m_PrefabInstance: {fileID: 530311105}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &542098346
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12487,6 +12563,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2081534204}
     m_Modifications:
+    - target: {fileID: 6151298055800859156, guid: 13264d633d3544946b062a9df1e2e40f, type: 3}
+      propertyPath: _volume
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 6151298055800859156, guid: 13264d633d3544946b062a9df1e2e40f, type: 3}
+      propertyPath: _audioSource
+      value: 
+      objectReference: {fileID: 596466357}
+    - target: {fileID: 6522474382794716610, guid: 13264d633d3544946b062a9df1e2e40f, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 609b88a39b33848059b28327d2d86d66, type: 3}
+    - target: {fileID: 6522474382794716610, guid: 13264d633d3544946b062a9df1e2e40f, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6522474382794716610, guid: 13264d633d3544946b062a9df1e2e40f, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8299274384004940590, guid: 13264d633d3544946b062a9df1e2e40f, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -12560,6 +12656,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 925ef87c5bafc37469a2f7ec825dee4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &596466357 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6522474382794716610, guid: 13264d633d3544946b062a9df1e2e40f, type: 3}
+  m_PrefabInstance: {fileID: 596466354}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &598832667
 GameObject:
   m_ObjectHideFlags: 0
@@ -14345,13 +14446,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 243868787}
     m_Modifications:
+    - target: {fileID: 6151298055800859156, guid: d16133c9c679fed4d9ee5dc47a5a11b9, type: 3}
+      propertyPath: _volume
+      value: 0.426
+      objectReference: {fileID: 0}
+    - target: {fileID: 6151298055800859156, guid: d16133c9c679fed4d9ee5dc47a5a11b9, type: 3}
+      propertyPath: _audioSource
+      value: 
+      objectReference: {fileID: 770774089}
     - target: {fileID: 6522474382794716610, guid: d16133c9c679fed4d9ee5dc47a5a11b9, type: 3}
       propertyPath: m_Resource
       value: 
       objectReference: {fileID: 8300000, guid: 609b88a39b33848059b28327d2d86d66, type: 3}
     - target: {fileID: 6522474382794716610, guid: d16133c9c679fed4d9ee5dc47a5a11b9, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6522474382794716610, guid: d16133c9c679fed4d9ee5dc47a5a11b9, type: 3}
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
-      value: 0.508
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8299274384004940590, guid: d16133c9c679fed4d9ee5dc47a5a11b9, type: 3}
       propertyPath: m_RootOrder
@@ -14426,6 +14539,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 925ef87c5bafc37469a2f7ec825dee4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &770774089 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6522474382794716610, guid: d16133c9c679fed4d9ee5dc47a5a11b9, type: 3}
+  m_PrefabInstance: {fileID: 770774086}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &770877316 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 609280569260382430, guid: d8470b2d9ac17874a8c59119201e6671, type: 3}
@@ -30447,13 +30565,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1776759591}
     m_Modifications:
+    - target: {fileID: 6151298055800859156, guid: d16133c9c679fed4d9ee5dc47a5a11b9, type: 3}
+      propertyPath: _audioSource
+      value: 
+      objectReference: {fileID: 837096441}
     - target: {fileID: 6522474382794716610, guid: d16133c9c679fed4d9ee5dc47a5a11b9, type: 3}
       propertyPath: m_Resource
       value: 
       objectReference: {fileID: 8300000, guid: 609b88a39b33848059b28327d2d86d66, type: 3}
     - target: {fileID: 6522474382794716610, guid: d16133c9c679fed4d9ee5dc47a5a11b9, type: 3}
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
-      value: 0.508
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8299274384004940590, guid: d16133c9c679fed4d9ee5dc47a5a11b9, type: 3}
       propertyPath: m_RootOrder
@@ -30528,6 +30650,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 925ef87c5bafc37469a2f7ec825dee4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &837096441 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6522474382794716610, guid: d16133c9c679fed4d9ee5dc47a5a11b9, type: 3}
+  m_PrefabInstance: {fileID: 837096438}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &841551868 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6986371466421367663, guid: 124ad46aec1102e47a4cdae502be89aa, type: 3}
@@ -32354,6 +32481,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1776759591}
     m_Modifications:
+    - target: {fileID: 6151298055800859156, guid: 13264d633d3544946b062a9df1e2e40f, type: 3}
+      propertyPath: _volume
+      value: 0.464
+      objectReference: {fileID: 0}
+    - target: {fileID: 6151298055800859156, guid: 13264d633d3544946b062a9df1e2e40f, type: 3}
+      propertyPath: _audioSource
+      value: 
+      objectReference: {fileID: 959240229}
+    - target: {fileID: 6522474382794716610, guid: 13264d633d3544946b062a9df1e2e40f, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 609b88a39b33848059b28327d2d86d66, type: 3}
+    - target: {fileID: 6522474382794716610, guid: 13264d633d3544946b062a9df1e2e40f, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6522474382794716610, guid: 13264d633d3544946b062a9df1e2e40f, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8299274384004940590, guid: 13264d633d3544946b062a9df1e2e40f, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -32427,6 +32574,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 925ef87c5bafc37469a2f7ec825dee4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &959240229 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6522474382794716610, guid: 13264d633d3544946b062a9df1e2e40f, type: 3}
+  m_PrefabInstance: {fileID: 959240226}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &960581411
 GameObject:
   m_ObjectHideFlags: 0
@@ -32675,6 +32827,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1611121885}
     m_Modifications:
+    - target: {fileID: 6151298055800859156, guid: 13264d633d3544946b062a9df1e2e40f, type: 3}
+      propertyPath: _volume
+      value: 0.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 6151298055800859156, guid: 13264d633d3544946b062a9df1e2e40f, type: 3}
+      propertyPath: _audioSource
+      value: 
+      objectReference: {fileID: 967191783}
+    - target: {fileID: 6522474382794716610, guid: 13264d633d3544946b062a9df1e2e40f, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 609b88a39b33848059b28327d2d86d66, type: 3}
+    - target: {fileID: 6522474382794716610, guid: 13264d633d3544946b062a9df1e2e40f, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6522474382794716610, guid: 13264d633d3544946b062a9df1e2e40f, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8299274384004940590, guid: 13264d633d3544946b062a9df1e2e40f, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -32748,6 +32920,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 925ef87c5bafc37469a2f7ec825dee4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &967191783 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6522474382794716610, guid: 13264d633d3544946b062a9df1e2e40f, type: 3}
+  m_PrefabInstance: {fileID: 967191780}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &986092760
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35387,8 +35564,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 609b88a39b33848059b28327d2d86d66, type: 3}
     - target: {fileID: -1653022013273449393, guid: b47fbfedcfef5414580d99c9115e2b8a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1653022013273449393, guid: b47fbfedcfef5414580d99c9115e2b8a, type: 3}
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
-      value: 0.571
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4658904325700070051, guid: b47fbfedcfef5414580d99c9115e2b8a, type: 3}
       propertyPath: m_RootOrder
@@ -35442,6 +35623,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 7410389675181900697, guid: b47fbfedcfef5414580d99c9115e2b8a, type: 3}
+      propertyPath: _audioSource
+      value: 
+      objectReference: {fileID: 1160900480}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -35463,6 +35648,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 925ef87c5bafc37469a2f7ec825dee4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &1160900480 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: -1653022013273449393, guid: b47fbfedcfef5414580d99c9115e2b8a, type: 3}
+  m_PrefabInstance: {fileID: 1160900477}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1169449239
 GameObject:
   m_ObjectHideFlags: 0
@@ -37181,6 +37371,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 243868787}
     m_Modifications:
+    - target: {fileID: 6151298055800859156, guid: 13264d633d3544946b062a9df1e2e40f, type: 3}
+      propertyPath: _volume
+      value: 0.405
+      objectReference: {fileID: 0}
+    - target: {fileID: 6151298055800859156, guid: 13264d633d3544946b062a9df1e2e40f, type: 3}
+      propertyPath: _audioSource
+      value: 
+      objectReference: {fileID: 1266380293}
+    - target: {fileID: 6522474382794716610, guid: 13264d633d3544946b062a9df1e2e40f, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 609b88a39b33848059b28327d2d86d66, type: 3}
+    - target: {fileID: 6522474382794716610, guid: 13264d633d3544946b062a9df1e2e40f, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6522474382794716610, guid: 13264d633d3544946b062a9df1e2e40f, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8299274384004940590, guid: 13264d633d3544946b062a9df1e2e40f, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -37254,6 +37464,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 925ef87c5bafc37469a2f7ec825dee4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &1266380293 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6522474382794716610, guid: 13264d633d3544946b062a9df1e2e40f, type: 3}
+  m_PrefabInstance: {fileID: 1266380290}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1267014986
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37397,13 +37612,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2041601010}
     m_Modifications:
+    - target: {fileID: 6151298055800859156, guid: d16133c9c679fed4d9ee5dc47a5a11b9, type: 3}
+      propertyPath: _volume
+      value: 0.431
+      objectReference: {fileID: 0}
+    - target: {fileID: 6151298055800859156, guid: d16133c9c679fed4d9ee5dc47a5a11b9, type: 3}
+      propertyPath: _audioSource
+      value: 
+      objectReference: {fileID: 1285476142}
     - target: {fileID: 6522474382794716610, guid: d16133c9c679fed4d9ee5dc47a5a11b9, type: 3}
       propertyPath: m_Resource
       value: 
       objectReference: {fileID: 8300000, guid: 609b88a39b33848059b28327d2d86d66, type: 3}
     - target: {fileID: 6522474382794716610, guid: d16133c9c679fed4d9ee5dc47a5a11b9, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6522474382794716610, guid: d16133c9c679fed4d9ee5dc47a5a11b9, type: 3}
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
-      value: 0.508
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8299274384004940590, guid: d16133c9c679fed4d9ee5dc47a5a11b9, type: 3}
       propertyPath: m_RootOrder
@@ -37478,6 +37705,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 925ef87c5bafc37469a2f7ec825dee4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &1285476142 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6522474382794716610, guid: d16133c9c679fed4d9ee5dc47a5a11b9, type: 3}
+  m_PrefabInstance: {fileID: 1285476139}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1311062045
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38884,8 +39116,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 609b88a39b33848059b28327d2d86d66, type: 3}
     - target: {fileID: -1653022013273449393, guid: b47fbfedcfef5414580d99c9115e2b8a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1653022013273449393, guid: b47fbfedcfef5414580d99c9115e2b8a, type: 3}
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
-      value: 0.571
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4658904325700070051, guid: b47fbfedcfef5414580d99c9115e2b8a, type: 3}
       propertyPath: m_RootOrder
@@ -38939,6 +39175,14 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 7410389675181900697, guid: b47fbfedcfef5414580d99c9115e2b8a, type: 3}
+      propertyPath: _volume
+      value: 0.459
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410389675181900697, guid: b47fbfedcfef5414580d99c9115e2b8a, type: 3}
+      propertyPath: _audioSource
+      value: 
+      objectReference: {fileID: 1386145433}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -38960,6 +39204,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 925ef87c5bafc37469a2f7ec825dee4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &1386145433 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: -1653022013273449393, guid: b47fbfedcfef5414580d99c9115e2b8a, type: 3}
+  m_PrefabInstance: {fileID: 1386145430}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1395998453
 GameObject:
   m_ObjectHideFlags: 0
@@ -45257,13 +45506,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1611121885}
     m_Modifications:
+    - target: {fileID: 6151298055800859156, guid: d16133c9c679fed4d9ee5dc47a5a11b9, type: 3}
+      propertyPath: _volume
+      value: 0.487
+      objectReference: {fileID: 0}
+    - target: {fileID: 6151298055800859156, guid: d16133c9c679fed4d9ee5dc47a5a11b9, type: 3}
+      propertyPath: _audioSource
+      value: 
+      objectReference: {fileID: 1749261436}
     - target: {fileID: 6522474382794716610, guid: d16133c9c679fed4d9ee5dc47a5a11b9, type: 3}
       propertyPath: m_Resource
       value: 
       objectReference: {fileID: 8300000, guid: 609b88a39b33848059b28327d2d86d66, type: 3}
     - target: {fileID: 6522474382794716610, guid: d16133c9c679fed4d9ee5dc47a5a11b9, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6522474382794716610, guid: d16133c9c679fed4d9ee5dc47a5a11b9, type: 3}
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
-      value: 0.508
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8299274384004940590, guid: d16133c9c679fed4d9ee5dc47a5a11b9, type: 3}
       propertyPath: m_RootOrder
@@ -45338,6 +45599,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 925ef87c5bafc37469a2f7ec825dee4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &1749261436 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6522474382794716610, guid: d16133c9c679fed4d9ee5dc47a5a11b9, type: 3}
+  m_PrefabInstance: {fileID: 1749261433}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1752736926
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46938,8 +47204,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 609b88a39b33848059b28327d2d86d66, type: 3}
     - target: {fileID: -1653022013273449393, guid: b47fbfedcfef5414580d99c9115e2b8a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1653022013273449393, guid: b47fbfedcfef5414580d99c9115e2b8a, type: 3}
+      propertyPath: BypassReverbZones
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -1653022013273449393, guid: b47fbfedcfef5414580d99c9115e2b8a, type: 3}
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
-      value: 0.571
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4658904325700070051, guid: b47fbfedcfef5414580d99c9115e2b8a, type: 3}
       propertyPath: m_RootOrder
@@ -46993,6 +47267,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 7410389675181900697, guid: b47fbfedcfef5414580d99c9115e2b8a, type: 3}
+      propertyPath: _audioSource
+      value: 
+      objectReference: {fileID: 1831128170}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -47014,6 +47292,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 925ef87c5bafc37469a2f7ec825dee4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &1831128170 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: -1653022013273449393, guid: b47fbfedcfef5414580d99c9115e2b8a, type: 3}
+  m_PrefabInstance: {fileID: 1831128167}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1837917240
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48299,13 +48582,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2081534204}
     m_Modifications:
+    - target: {fileID: 6151298055800859156, guid: d16133c9c679fed4d9ee5dc47a5a11b9, type: 3}
+      propertyPath: _volume
+      value: 0.419
+      objectReference: {fileID: 0}
+    - target: {fileID: 6151298055800859156, guid: d16133c9c679fed4d9ee5dc47a5a11b9, type: 3}
+      propertyPath: _audioSource
+      value: 
+      objectReference: {fileID: 1909722107}
     - target: {fileID: 6522474382794716610, guid: d16133c9c679fed4d9ee5dc47a5a11b9, type: 3}
       propertyPath: m_Resource
       value: 
       objectReference: {fileID: 8300000, guid: 609b88a39b33848059b28327d2d86d66, type: 3}
     - target: {fileID: 6522474382794716610, guid: d16133c9c679fed4d9ee5dc47a5a11b9, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6522474382794716610, guid: d16133c9c679fed4d9ee5dc47a5a11b9, type: 3}
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
-      value: 0.508
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8299274384004940590, guid: d16133c9c679fed4d9ee5dc47a5a11b9, type: 3}
       propertyPath: m_RootOrder
@@ -48380,6 +48675,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 925ef87c5bafc37469a2f7ec825dee4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &1909722107 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6522474382794716610, guid: d16133c9c679fed4d9ee5dc47a5a11b9, type: 3}
+  m_PrefabInstance: {fileID: 1909722104}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1910412475
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50027,6 +50327,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1157807317}
     m_Modifications:
+    - target: {fileID: -1653022013273449393, guid: 4c10bc37c0e8b774387330f749138159, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 609b88a39b33848059b28327d2d86d66, type: 3}
+    - target: {fileID: -1653022013273449393, guid: 4c10bc37c0e8b774387330f749138159, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1653022013273449393, guid: 4c10bc37c0e8b774387330f749138159, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4658904325700070051, guid: 4c10bc37c0e8b774387330f749138159, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -50079,6 +50391,14 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 7410389675181900697, guid: 4c10bc37c0e8b774387330f749138159, type: 3}
+      propertyPath: _volume
+      value: 0.485
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410389675181900697, guid: 4c10bc37c0e8b774387330f749138159, type: 3}
+      propertyPath: _audioSource
+      value: 
+      objectReference: {fileID: 1989793587}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -50100,6 +50420,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 925ef87c5bafc37469a2f7ec825dee4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &1989793587 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: -1653022013273449393, guid: 4c10bc37c0e8b774387330f749138159, type: 3}
+  m_PrefabInstance: {fileID: 1989793584}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1994698495
 GameObject:
   m_ObjectHideFlags: 0
