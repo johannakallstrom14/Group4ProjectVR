@@ -31,7 +31,7 @@ public class BookTeleportManager : MonoBehaviour
             // Force the animation by name if the trigger fails
             if (bookAnimator != null)
             {
-                bookAnimator.Play("Armature|MagicBook_OpenAction"); // Use the EXACT name from your gray box
+                bookAnimator.SetBool(triggerName, true);
                 Debug.Log("Playing Animation...");
             }
 
