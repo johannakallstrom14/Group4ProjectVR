@@ -12468,10 +12468,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0883976e2bb704461925177118c3e004, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BookTeleportManager
-  teleportClip: {fileID: 8300000, guid: 7e0e25984724b4f2199aa89ad75e1f37, type: 3}
+  bookAnimator: {fileID: 0}
+  triggerName: OpenBook
+  part1: {fileID: 0}
+  part2: {fileID: 0}
   playerTransform: {fileID: 1731905511}
   targetLocation: {fileID: 753833917}
-  delayAfterAudio: 0.5
+  delayAfterPart1: 0.5
   nextSkybox: {fileID: 2100000, guid: 9803600998c48b140b2f7038d0fc2eb1, type: 2}
 --- !u!1001 &593477352
 PrefabInstance:
@@ -38928,10 +38931,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0883976e2bb704461925177118c3e004, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BookTeleportManager
-  teleportClip: {fileID: 8300000, guid: 7e0e25984724b4f2199aa89ad75e1f37, type: 3}
+  bookAnimator: {fileID: 0}
+  triggerName: OpenBook
+  part1: {fileID: 0}
+  part2: {fileID: 0}
   playerTransform: {fileID: 1731905511}
   targetLocation: {fileID: 753833917}
-  delayAfterAudio: 0.5
+  delayAfterPart1: 0.5
   nextSkybox: {fileID: 2100000, guid: 9803600998c48b140b2f7038d0fc2eb1, type: 2}
 --- !u!1001 &1367067947
 PrefabInstance:
@@ -39975,10 +39981,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0883976e2bb704461925177118c3e004, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BookTeleportManager
-  teleportClip: {fileID: 0}
+  bookAnimator: {fileID: 0}
+  triggerName: OpenBook
+  part1: {fileID: 0}
+  part2: {fileID: 0}
   playerTransform: {fileID: 1731905511}
   targetLocation: {fileID: 753833917}
-  delayAfterAudio: 0.5
+  delayAfterPart1: 0.5
   nextSkybox: {fileID: 2100000, guid: 01a65cffd361a9842b13d14348c7f924, type: 2}
 --- !u!114 &1434035695
 MonoBehaviour:
@@ -53227,10 +53236,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0883976e2bb704461925177118c3e004, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BookTeleportManager
-  teleportClip: {fileID: 8300000, guid: 5264ef0ab6bf04ae0a8e12849d29daae, type: 3}
+  bookAnimator: {fileID: 0}
+  triggerName: OpenBook
+  part1: {fileID: 0}
+  part2: {fileID: 0}
   playerTransform: {fileID: 1731905511}
   targetLocation: {fileID: 1024679948}
-  delayAfterAudio: 0.5
+  delayAfterPart1: 0.5
   nextSkybox: {fileID: 2100000, guid: 01a65cffd361a9842b13d14348c7f924, type: 2}
 --- !u!114 &2134530527
 MonoBehaviour:
@@ -54570,6 +54582,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 883617958889312903, guid: 62c8bc523ec0f6a45ab78441f35bed00, type: 3}
+      propertyPath: part1
+      value: 
+      objectReference: {fileID: 8300000, guid: 5264ef0ab6bf04ae0a8e12849d29daae, type: 3}
+    - target: {fileID: 883617958889312903, guid: 62c8bc523ec0f6a45ab78441f35bed00, type: 3}
+      propertyPath: part2
+      value: 
+      objectReference: {fileID: 8300000, guid: 7e0e25984724b4f2199aa89ad75e1f37, type: 3}
+    - target: {fileID: 883617958889312903, guid: 62c8bc523ec0f6a45ab78441f35bed00, type: 3}
       propertyPath: bookAudio
       value: 
       objectReference: {fileID: 8521266740909929989}
@@ -54581,6 +54601,10 @@ PrefabInstance:
       propertyPath: nextSkybox
       value: 
       objectReference: {fileID: 2100000, guid: 01a65cffd361a9842b13d14348c7f924, type: 2}
+    - target: {fileID: 883617958889312903, guid: 62c8bc523ec0f6a45ab78441f35bed00, type: 3}
+      propertyPath: bookAnimator
+      value: 
+      objectReference: {fileID: 8521266740909929990}
     - target: {fileID: 883617958889312903, guid: 62c8bc523ec0f6a45ab78441f35bed00, type: 3}
       propertyPath: teleportClip
       value: 
@@ -54705,6 +54729,11 @@ MonoBehaviour:
 --- !u!82 &8521266740909929989 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 8733394477556809500, guid: 62c8bc523ec0f6a45ab78441f35bed00, type: 3}
+  m_PrefabInstance: {fileID: 8521266740909929987}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &8521266740909929990 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1950071256380442064, guid: 62c8bc523ec0f6a45ab78441f35bed00, type: 3}
   m_PrefabInstance: {fileID: 8521266740909929987}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &8908607113692945409

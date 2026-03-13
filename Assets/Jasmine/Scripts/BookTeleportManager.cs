@@ -3,13 +3,18 @@ using System.Collections;
 
 public class BookTeleportManager : MonoBehaviour
 {
-    [Header("Audio Settings")]
-    public AudioClip teleportClip; // Drag your audio file here
+    [Header("Animation")]
+    public Animator bookAnimator;
+    public string triggerName = "OpenBook";
+
+    [Header("Audio Clips")]
+    public AudioClip part1; // Plays at the start (at the book)
+    public AudioClip part2; // Plays after teleporting (at the lake)
 
     [Header("Teleport Settings")]
     public Transform playerTransform;
     public Transform targetLocation;
-    public float delayAfterAudio = 0.5f; // Small buffer after sound ends
+    public float delayAfterPart1 = 0.5f; // Pause between Part 1 ending and teleporting
 
     [Header("Environment")]
     public Material nextSkybox;
@@ -21,42 +26,58 @@ public class BookTeleportManager : MonoBehaviour
         if (!sequenceStarted)
         {
             sequenceStarted = true;
-            
-            // Play through Global Manager for maximum clarity
+
+            // 1. Physically open the book
+            if (bookAnimator != null)
+            {
+                bookAnimator.SetTrigger(triggerName);
+            }
+
+            // 2. Start the story sequence
             if (GlobalAudioManager.Instance != null)
             {
-                GlobalAudioManager.Instance.PlayClip(teleportClip);
-                StartCoroutine(WaitAndTeleport());
+                StartCoroutine(PlayFullStorySequence());
             }
             else
             {
-                // Fallback if Manager is missing
-                Debug.LogError("GlobalAudioManager instance not found!");
-                TeleportPlayer(); 
+                Debug.LogError("GlobalAudioManager instance not found! Teleporting immediately.");
+                ExecuteTeleport();
             }
         }
     }
 
-    IEnumerator WaitAndTeleport()
+    IEnumerator PlayFullStorySequence()
     {
-        // Wait for the audio to finish playing in the global manager
+        // --- PART 1: AT THE BOOK ---
+        GlobalAudioManager.Instance.PlayClip(part1);
+
+        // Wait until Part 1 is finished
         while (GlobalAudioManager.Instance.IsAudioPlaying())
         {
             yield return null;
         }
 
-        // Optional extra delay so it's not a sudden "snap"
-        yield return new WaitForSeconds(delayAfterAudio);
+        // Buffer pause before the "jump"
+        yield return new WaitForSeconds(delayAfterPart1);
 
-        TeleportPlayer();
+        // --- THE TELEPORT ---
+        ExecuteTeleport();
         ChangeEnvironment();
+
+        // Brief moment for player to adjust eyes to new location
+        yield return new WaitForSeconds(0.5f);
+
+        // --- PART 2: AT THE NEW LOCATION ---
+        GlobalAudioManager.Instance.PlayClip(part2);
     }
 
-    void TeleportPlayer()
+    void ExecuteTeleport()
     {
         if (playerTransform == null || targetLocation == null) return;
 
         CharacterController cc = playerTransform.GetComponent<CharacterController>();
+
+        // Disable CC so it doesn't block the transform change
         if (cc != null) cc.enabled = false;
 
         playerTransform.position = targetLocation.position;
