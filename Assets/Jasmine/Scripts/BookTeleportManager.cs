@@ -23,25 +23,21 @@ public class BookTeleportManager : MonoBehaviour
 
     public void StartTeleportSequence()
     {
+        Debug.Log("Button was pushed!"); // This will show in the console
         if (!sequenceStarted)
         {
             sequenceStarted = true;
 
-            // 1. Physically open the book
+            // Force the animation by name if the trigger fails
             if (bookAnimator != null)
             {
-                bookAnimator.SetTrigger(triggerName);
+                bookAnimator.Play("Armature|MagicBook_OpenAction"); // Use the EXACT name from your gray box
+                Debug.Log("Playing Animation...");
             }
 
-            // 2. Start the story sequence
             if (GlobalAudioManager.Instance != null)
             {
                 StartCoroutine(PlayFullStorySequence());
-            }
-            else
-            {
-                Debug.LogError("GlobalAudioManager instance not found! Teleporting immediately.");
-                ExecuteTeleport();
             }
         }
     }
