@@ -8,6 +8,9 @@ public class BookTeleportManager : MonoBehaviour
     public string boolName = "OpenBook";
     public string triggerName = "BookOpen";
 
+    [Header("Particles")]
+    public ParticleSystem bookParticles;
+
     [Header("Audio Clips")]
     public AudioClip part1; // Plays at the start (at the book)
     public AudioClip part2; // Plays after teleporting (at the lake)
@@ -24,23 +27,21 @@ public class BookTeleportManager : MonoBehaviour
 
     public void StartTeleportSequence()
     {
-        Debug.Log("Button was pushed!"); // This will show in the console
+        Debug.Log("Button was pushed!");
+
         if (!sequenceStarted)
         {
             sequenceStarted = true;
 
-            // Force the animation by name if the trigger fails
-            /*
             if (bookAnimator != null)
             {
-                bookAnimator.SetBool(boolName, true);
+                bookAnimator.SetTrigger(triggerName);
                 Debug.Log("Playing Animation...");
             }
-            */
 
-            if (!bookAnimator)
+            if (bookParticles != null)
             {
-                bookAnimator.SetTrigger(triggerName);
+                bookParticles.Play();
             }
 
             if (GlobalAudioManager.Instance != null)
@@ -52,26 +53,20 @@ public class BookTeleportManager : MonoBehaviour
 
     IEnumerator PlayFullStorySequence()
     {
-        // --- PART 1: AT THE BOOK ---
         GlobalAudioManager.Instance.PlayClip(part1);
 
-        // Wait until Part 1 is finished
         while (GlobalAudioManager.Instance.IsAudioPlaying())
         {
             yield return null;
         }
 
-        // Buffer pause before the "jump"
         yield return new WaitForSeconds(delayAfterPart1);
 
-        // --- THE TELEPORT ---
         ExecuteTeleport();
         ChangeEnvironment();
 
-        // Brief moment for player to adjust eyes to new location
         yield return new WaitForSeconds(0.5f);
 
-        // --- PART 2: AT THE NEW LOCATION ---
         GlobalAudioManager.Instance.PlayClip(part2);
     }
 
@@ -81,7 +76,6 @@ public class BookTeleportManager : MonoBehaviour
 
         CharacterController cc = playerTransform.GetComponent<CharacterController>();
 
-        // Disable CC so it doesn't block the transform change
         if (cc != null) cc.enabled = false;
 
         playerTransform.position = targetLocation.position;
