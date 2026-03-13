@@ -1,95 +1,151 @@
 using UnityEngine;
+
 using System.Collections;
 
+
+
 public class BookTeleportManager : MonoBehaviour
+
 {
-    [Header("Animation")]
-    public Animator bookAnimator;
-    public string boolName = "OpenBook";
-    public string triggerName = "BookOpen";
 
-    [Header("Particles")]
-    public ParticleSystem bookParticles;
+    [Header("Audio Settings")]
 
-    [Header("Audio Clips")]
-    public AudioClip part1; // Plays at the start (at the book)
-    public AudioClip part2; // Plays after teleporting (at the lake)
+    public AudioClip teleportClip; // Drag your audio file here
+
+
 
     [Header("Teleport Settings")]
+
     public Transform playerTransform;
+
     public Transform targetLocation;
-    public float delayAfterPart1 = 0.5f; // Pause between Part 1 ending and teleporting
+
+    public float delayAfterAudio = 0.5f; // Small buffer after sound ends
+
+
 
     [Header("Environment")]
+
     public Material nextSkybox;
+
+
 
     private bool sequenceStarted = false;
 
+
+
     public void StartTeleportSequence()
+
     {
-        Debug.Log("Button was pushed!");
 
         if (!sequenceStarted)
+
         {
+
             sequenceStarted = true;
 
-            if (bookAnimator != null)
-            {
-                bookAnimator.SetTrigger(triggerName);
-                Debug.Log("Playing Animation...");
-            }
+            
 
-            if (bookParticles != null)
-            {
-                bookParticles.Play();
-            }
+            // Play through Global Manager for maximum clarity
 
             if (GlobalAudioManager.Instance != null)
+
             {
-                StartCoroutine(PlayFullStorySequence());
+
+                GlobalAudioManager.Instance.PlayClip(teleportClip);
+
+                StartCoroutine(WaitAndTeleport());
+
             }
+
+            else
+
+            {
+
+                // Fallback if Manager is missing
+
+                Debug.LogError("GlobalAudioManager instance not found!");
+
+                TeleportPlayer(); 
+
+            }
+
         }
+
     }
 
-    IEnumerator PlayFullStorySequence()
+
+
+    IEnumerator WaitAndTeleport()
+
     {
-        GlobalAudioManager.Instance.PlayClip(part1);
+
+        // Wait for the audio to finish playing in the global manager
 
         while (GlobalAudioManager.Instance.IsAudioPlaying())
+
         {
+
             yield return null;
+
         }
 
-        yield return new WaitForSeconds(delayAfterPart1);
 
-        ExecuteTeleport();
+
+        // Optional extra delay so it's not a sudden "snap"
+
+        yield return new WaitForSeconds(delayAfterAudio);
+
+
+
+        TeleportPlayer();
+
         ChangeEnvironment();
 
-        yield return new WaitForSeconds(0.5f);
-
-        GlobalAudioManager.Instance.PlayClip(part2);
     }
 
-    void ExecuteTeleport()
+
+
+    void TeleportPlayer()
+
     {
+
         if (playerTransform == null || targetLocation == null) return;
+
+
 
         CharacterController cc = playerTransform.GetComponent<CharacterController>();
 
         if (cc != null) cc.enabled = false;
 
+
+
         playerTransform.position = targetLocation.position;
+
         playerTransform.rotation = targetLocation.rotation;
 
+
+
         if (cc != null) cc.enabled = true;
+
     }
 
+
+
     void ChangeEnvironment()
+
     {
+
         if (nextSkybox != null)
+
         {
+
             RenderSettings.skybox = nextSkybox;
+
             DynamicGI.UpdateEnvironment();
+
         }
+
     }
+
 }
