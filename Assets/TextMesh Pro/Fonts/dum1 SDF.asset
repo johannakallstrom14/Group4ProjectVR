@@ -48,36 +48,36 @@ Material:
     m_Ints: []
     m_Floats:
     - _Ambient: 0.545
-    - _Bevel: 0.319
-    - _BevelClamp: 0
-    - _BevelOffset: -0.088
+    - _Bevel: 0.347
+    - _BevelClamp: 0.279
+    - _BevelOffset: -0.055
     - _BevelRoundness: 0
-    - _BevelWidth: 0
+    - _BevelWidth: -0.168
     - _BumpFace: 0
     - _BumpOutline: 0
     - _ColorMask: 15
     - _CullMode: 0
     - _Diffuse: 0.206
-    - _FaceDilate: 0.019
+    - _FaceDilate: -0.317
     - _FaceUVSpeedX: 0
     - _FaceUVSpeedY: 0
     - _GlowInner: 0.05
     - _GlowOffset: 0
-    - _GlowOuter: 0.05
+    - _GlowOuter: 0
     - _GlowPower: 0.75
     - _GradientScale: 10
     - _LightAngle: 3.1416
     - _MaskSoftnessX: 0
     - _MaskSoftnessY: 0
-    - _OutlineSoftness: 0.669
+    - _OutlineSoftness: 0.381
     - _OutlineUVSpeedX: 0
     - _OutlineUVSpeedY: 0
-    - _OutlineWidth: 0.661
+    - _OutlineWidth: 0.498
     - _PerspectiveFilter: 0.875
     - _Reflectivity: 5
-    - _ScaleRatioA: 0.58574677
-    - _ScaleRatioB: 0.71415
-    - _ScaleRatioC: 0.71415
+    - _ScaleRatioA: 0.9
+    - _ScaleRatioB: 1.01655
+    - _ScaleRatioC: 1.01655
     - _ScaleX: 1
     - _ScaleY: 1
     - _ShaderFlags: 0
@@ -101,13 +101,13 @@ Material:
     m_Colors:
     - _ClipRect: {r: -32767, g: -32767, b: 32767, a: 32767}
     - _EnvMatrixRotation: {r: 0, g: 0, b: 0, a: 0}
-    - _FaceColor: {r: 0.8113208, g: 0.44135705, b: 0.13011736, a: 1}
-    - _GlowColor: {r: 0, g: 1, b: 0, a: 0.5}
+    - _FaceColor: {r: 0.8805031, g: 0.63069934, b: 0.41810045, a: 1}
+    - _GlowColor: {r: 0.70440245, g: 0.47169745, b: 0.16170235, a: 0.5}
     - _MaskCoord: {r: 0, g: 0, b: 32767, a: 32767}
-    - _OutlineColor: {r: 0.45911938, g: 0.1473374, b: 0.076519854, a: 1}
+    - _OutlineColor: {r: 0.44654083, g: 0.42481166, b: 0.41986072, a: 1}
     - _ReflectFaceColor: {r: 0, g: 0, b: 0, a: 1}
     - _ReflectOutlineColor: {r: 0, g: 0, b: 0, a: 1}
-    - _SpecularColor: {r: 0.9433962, g: 0.5889613, b: 0.40049827, a: 1}
+    - _SpecularColor: {r: 1, g: 0.62736976, b: 0.43081754, a: 1}
     - _UnderlayColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
