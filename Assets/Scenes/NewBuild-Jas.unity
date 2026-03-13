@@ -53236,10 +53236,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0883976e2bb704461925177118c3e004, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BookTeleportManager
-  bookAnimator: {fileID: 0}
+  bookAnimator: {fileID: 8521266740909929990}
   triggerName: OpenBook
-  part1: {fileID: 0}
-  part2: {fileID: 0}
+  part1: {fileID: 8300000, guid: 5264ef0ab6bf04ae0a8e12849d29daae, type: 3}
+  part2: {fileID: 8300000, guid: 7e0e25984724b4f2199aa89ad75e1f37, type: 3}
   playerTransform: {fileID: 1731905511}
   targetLocation: {fileID: 1024679948}
   delayAfterPart1: 0.5
