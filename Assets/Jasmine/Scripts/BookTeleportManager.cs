@@ -5,7 +5,8 @@ public class BookTeleportManager : MonoBehaviour
 {
     [Header("Animation")]
     public Animator bookAnimator;
-    public string triggerName = "OpenBook";
+    public string boolName = "OpenBook";
+    public string triggerName = "BookOpen";
 
     [Header("Audio Clips")]
     public AudioClip part1; // Plays at the start (at the book)
@@ -29,10 +30,17 @@ public class BookTeleportManager : MonoBehaviour
             sequenceStarted = true;
 
             // Force the animation by name if the trigger fails
+            /*
             if (bookAnimator != null)
             {
-                bookAnimator.SetBool(triggerName, true);
+                bookAnimator.SetBool(boolName, true);
                 Debug.Log("Playing Animation...");
+            }
+            */
+
+            if (!bookAnimator)
+            {
+                bookAnimator.SetTrigger(triggerName);
             }
 
             if (GlobalAudioManager.Instance != null)
