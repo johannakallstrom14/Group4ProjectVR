@@ -8,6 +8,10 @@ public class PondTouchByDistance : MonoBehaviour
     [SerializeField] private Transform rightFingertip;
     [SerializeField] private BoxCollider triggerCollider;
     [SerializeField] private float touchDistance = 0.1f;
+     
+    [Header("Audio Settings")]
+    [SerializeField] private AudioSource audioSource; // The "Player"
+    public AudioClip teleportClip; // The "File"
 
     private bool hasChanged = false;
 
@@ -29,9 +33,23 @@ public class PondTouchByDistance : MonoBehaviour
 
         if (distance <= touchDistance)
         {
-            hasChanged = true;
-            pondRenderer.material = magicalMaterial;
-            Debug.Log("Pond changed material");
+            ChangePondState();
         }
+    }
+
+    private void ChangePondState()
+    {
+        hasChanged = true;
+        
+        // 1. Change the visual
+        pondRenderer.material = magicalMaterial;
+        
+        // 2. Play the audio at the exact same time
+        if (audioSource != null && teleportClip != null)
+        {
+            audioSource.PlayOneShot(teleportClip);
+        }
+
+        Debug.Log("Pond material changed and audio played.");
     }
 }
