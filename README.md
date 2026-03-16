@@ -8,22 +8,17 @@ Include the name, logo and images refering to your project
 
 ## Introduction
 
-[Project XR ] is an educational XR experience that lets you explore in 3D [...] . Learn about [...].
-
-The problem detected was...
-
-The proposed solution is valuable because...
+The Forgotten Kingdom is a fun artistic project that lets you explore a world built with magical aspects such as flying sparkling book and a lake that changes when touched. It is a magical kingdom experience built to bring some fun and whimsy into the participants experience.
 
 ## Design Process
+- Brainstorming: We drew storyboards as our brainstorming method looking up inspiration from movies and pinterest to gather a bigger idea for what we could do.
+-
+- A screenshot of the whiteboard or post-it notes used to land the project's idea.
 
-[_Add evidence on the general overview of how you planned, designed, and developed your project, including the goals, challenges, and solutions._]
+- User Persona: The user persona was more in general people who enjoy the more whimiscal things, such as fantasy stories or more magical elements but we also wanted to make it enjoyable for a broader audience.
 
-For example:
-- Brainstorming: A screenshot of the whiteboard or post-it notes used to land the project's idea.
-- User Research: Pictures and summary of how you conducted user research, such as surveys, interviews, or observations, and what insights you gained from it.
-- User Persona: A description of your target user, their needs, motivations, and pain points, and how your project addresses them.
-- User Journey: A visualization of how your user interacts with your project, from the initial trigger to the final outcome, and what emotions they experience along the way.
-- Wireframes and Prototypes: A collection of sketches, mockups, or prototypes that show the layout, structure, and functionality of your project, and how you tested and iterated on them.
+- User Journey: The user interacts with buttons that navigate them through the world and takes them on the journey. They will also be able to pick cherries and put them in a basket as a fun side misson on the journey. Lastly they will be ablte to via touch initiate the change of the lake into a more spacy material something that bring together the journey and ends it on a high. The emotions we hope to stir up are nostalgia,fun and maybe a feeling of enchantment.
+  
 
 
 ## System description
@@ -34,10 +29,10 @@ For example:
 
 For example:
 
-- Immersive and realistic 3D models of [...]
-- Interactive and intuitive controls using hand gestures and voice commands
-- Customizable settings and preferences for the user experience
-- Compatible with various XR platforms and devices
+- Immersive and realistic 3D models of cherries, A palace built in Maya, a book and an intractive lake. The nature has trees that look realistic with wind and bushes/flowers.
+- Interactive and intuitive controls using hand interaction the Meta sdk so everything maps to the gestures of real life.
+- our setting are not necessarliy changable however the audio can be turned up or turned down.
+- Compatible with various XR platforms and devices: it is compatible with a few different headsets.
 
 Watch the demo video or try the live version.
 
