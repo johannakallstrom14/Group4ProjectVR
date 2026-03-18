@@ -8,12 +8,22 @@ public class PondTouchByDistance : MonoBehaviour
     [SerializeField] private Transform rightFingertip;
     [SerializeField] private BoxCollider triggerCollider;
     [SerializeField] private float touchDistance = 0.1f;
-     
+
     [Header("Audio Settings")]
-    [SerializeField] private AudioSource audioSource; // The "Player"
-    public AudioClip teleportClip; // The "File"
+    [SerializeField] private AudioSource audioSource;
+    public AudioClip teleportClip;
+
+    [Header("Canvas Settings")]
+    [SerializeField] private GameObject canvasObject; // 👈 ADD THIS
 
     private bool hasChanged = false;
+
+    private void Start()
+    {
+        // Hide canvas at start
+        if (canvasObject != null)
+            canvasObject.SetActive(false);
+    }
 
     private void Update()
     {
@@ -40,16 +50,22 @@ public class PondTouchByDistance : MonoBehaviour
     private void ChangePondState()
     {
         hasChanged = true;
-        
-        // 1. Change the visual
+
+        // 1. Change visual
         pondRenderer.material = magicalMaterial;
-        
-        // 2. Play the audio at the exact same time
+
+        // 2. Play audio
         if (audioSource != null && teleportClip != null)
         {
             audioSource.PlayOneShot(teleportClip);
         }
 
-        Debug.Log("Pond material changed and audio played.");
+        // 3. Show canvas 👈 ADD THIS
+        if (canvasObject != null)
+        {
+            canvasObject.SetActive(true);
+        }
+
+        Debug.Log("Pond material changed, audio played, canvas shown.");
     }
 }
