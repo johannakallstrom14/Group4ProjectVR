@@ -16061,8 +16061,8 @@ MonoBehaviour:
   distance: 2.5
   followSpeed: 2
   maxAngle: 35
-  visibleDuration: 5
-  fadeDuration: 2
+  visibleDuration: 10
+  fadeDuration: 4
 --- !u!225 &423102273
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -19828,7 +19828,7 @@ Transform:
   m_GameObject: {fileID: 753833916}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.25, y: 0.124, z: -18.01}
+  m_LocalPosition: {x: -3.25, y: 0.124, z: -17.53}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
