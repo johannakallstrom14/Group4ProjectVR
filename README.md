@@ -58,10 +58,10 @@ You also need to install the following dependencies or libraries for your projec
 
 [_Usage section showing how to use your project and interact with its features. You can use examples, screenshots, gifs, or videos to demonstrate the user interface, controls, and feedback of your project. You can also provide tips, tricks, or best practices for using your project effectively._]
 
-To use [Your App XR} and interact with its features, follow the guidelines below:
+To use The forgotten kingdom VR and interact with its features, follow the guidelines below:
 
-- To move around, use the touchpad or the joystick on your controller, or swipe on your phone screen.
-- To select ...a planet or a moon, point at it with your controller or your phone, or gaze at it with your headset.
+- To move around,make a room boundary that is at least 3x3 and walk around.
+- push the button with hands to start the story and continue.
 - To zoom in or out, use the trigger or the button on your controller, or pinch on your phone screen.
 - To access the information panel, press...
 - To use voice commands, say "OK" followed by one of the following phrases:
