@@ -12,9 +12,11 @@ The Forgotten Kingdom is a fun artistic project that lets you explore a world bu
 
 ## Design Process
 - Brainstorming: We drew storyboards as our brainstorming method looking up inspiration from movies and pinterest to gather a bigger idea for what we could do.
+  <p>
  <img src="Assets/Images_ReadMe/Storyboard.jpeg" width="300">
-- A screenshot of the whiteboard or post-it notes used to land the project's idea.
-
+- A palace was built in Maya to remind of the Aladdin palace but with a different touch.
+  <img src="Assets/Images_ReadMe/MayaPalace.jpg" width="300">
+</p>
 - User Persona: The user persona was more in general people who enjoy the more whimiscal things, such as fantasy stories or more magical elements but we also wanted to make it enjoyable for a broader audience.
 
 - User Journey: The user interacts with buttons that navigate them through the world and takes them on the journey. They will also be able to pick cherries and put them in a basket as a fun side misson on the journey. Lastly they will be ablte to via touch initiate the change of the lake into a more spacy material something that bring together the journey and ends it on a high. The emotions we hope to stir up are nostalgia,fun and maybe a feeling of enchantment.
@@ -50,8 +52,9 @@ To install and run The Forgotten Kingdom on your platform or device, follow the 
 
 You also need to install the following dependencies or libraries for your project:
 
-- Library A - a Unity plugin for building VR and AR experiences
-- Library B - a C# wrapper for speech recognition and synthesis
+- Packages used - Meta SDK Building blocks, Meta XR All in one, Meta XR Core, Meta XR interaction, XR hands
+- ExtralityLab@DSV for websocket
+
 
 ## Usage
 
@@ -73,7 +76,12 @@ Some tips, tricks, and best practices for using [Your App XR} effectively:
 
 
 ## References
-We were inspired by aladdin and life of pi and wanted to build the world around that vibe. 
+We were inspired by Aladdin and Life of Pi and wanted to build the world around that vibe. 
+<p>
+ <img src="Assets/Images_ReadMe/AladdinPalace.jpeg" width="300"> 
+ <img src="Assets/Images_ReadMe/LifeOfPi.jpeg" width="300">
+</p>
+
 
 
 ## Contributors
