@@ -2,9 +2,9 @@
 
 _Some examples are shown below but you should expand on each subtitle as much as needed to provide comprehensive information/ **MarkDown** reference is available here: <https://www.markdownguide.org/basic-syntax/>_
 
-Include the name, logo and images refering to your project
+The Forgotten Kingdom
 
-![{Your App XR} logo](./docs/example-image.jpg)
+ <img src="Assets/Images_ReadMe/Storyboard.jpeg" width="300">
 
 ## Introduction
 
