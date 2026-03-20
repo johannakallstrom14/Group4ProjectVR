@@ -12,7 +12,7 @@ The Forgotten Kingdom is a fun artistic project that lets you explore a world bu
 
 ## Design Process
 - Brainstorming: We drew storyboards as our brainstorming method looking up inspiration from movies and pinterest to gather a bigger idea for what we could do.
--
+ <img src="Assets/Images_ReadMe/Storyboard.jpeg" width="300">
 - A screenshot of the whiteboard or post-it notes used to land the project's idea.
 
 - User Persona: The user persona was more in general people who enjoy the more whimiscal things, such as fantasy stories or more magical elements but we also wanted to make it enjoyable for a broader audience.
@@ -62,7 +62,7 @@ To use The forgotten kingdom VR and interact with its features, follow the guide
 
 - To move around,make a room boundary that is at least 3x3 and walk around.
 - push the button with hands to start the story and continue.
-- To zoom in or out, use the trigger or the button on your controller, or pinch on your phone screen.
+- Grab the cherries by hand or ray snap.
 - To access the information panel, press...
 - To use voice commands, say "OK" followed by one of the following phrases:
   - "Show me [X]" - to show X element
