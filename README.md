@@ -42,12 +42,11 @@ Link: <https://extralitylab.dsv.su.se/>
 
 [_Installation process to build and run your project. Use code blocks, tables, or lists to show the commands, steps, or requirements the chosen platform. Mention any dependencies or libraries that your project uses and how to install them._]
 
-To install and run [Your app] on your platform or device, follow the instructions below:
+To install and run The Forgotten Kingdom on your platform or device, follow the instructions below:
 
 | Platform | Device | Requirements | Commands |
 | -------- | ------ | ------------ | -------- |
-| Windows  | Meta Quest   | Unity 2022.3 or higher, Arduino | `git clone https://github.com/user/repo.git`<br>`cd project-xr`<br>`open MainScene.unity`<br>`Build and Run` |
-| Android  | Phone  | Android 19 or higher, ARCore 1.18 or higher | `git clone https://github.com/user/repo.git`<br>`cd solar-system-xr`<br>`open SolarSystemXR.unity`<br>`switch platform to Android`<br>`build and run` |
+| Windows  | Meta Quest   | Unity 6000.3.10f1 or higher, Arduino esp32 thing plus| `git clone [https://github.com/user/repo.git](https://github.com/johannakallstrom14/Group4ProjectVR.git)`<br>`cd project-xr`<br>`open NewBuildJas.unity`<br>`Build and Run` |
 
 You also need to install the following dependencies or libraries for your project:
 
@@ -58,28 +57,27 @@ You also need to install the following dependencies or libraries for your projec
 
 [_Usage section showing how to use your project and interact with its features. You can use examples, screenshots, gifs, or videos to demonstrate the user interface, controls, and feedback of your project. You can also provide tips, tricks, or best practices for using your project effectively._]
 
-To use The forgotten kingdom VR and interact with its features, follow the guidelines below:
+To use The Forgotten Kingdom VR and interact with its features, follow the guidelines below:
 
 - To move around,make a room boundary that is at least 3x3 and walk around.
 - push the button with hands to start the story and continue.
-- Grab the cherries by hand or ray snap.
-- To access the information panel, press...
-- To use voice commands, say "OK" followed by one of the following phrases:
-  - "Show me [X]" - to show X element
-  - "Close window Y" - to close window Y
+- Grab the cherries by hand or ray snap interactor to hand.
+- To continue the experience push the next button story will keep going
+- When arrived at lake touch the lake or move within lake bounds and material will change 
+- UI thanking for visiting the kingdom
   
 Some tips, tricks, and best practices for using [Your App XR} effectively:
 
-- Tip 1
-- Tip 2
+- Tip 1 - Have a well lit room.
+- Tip 2 - Have a good mindset.
 
 
 ## References
+We were inspired by aladdin and life of pi and wanted to build the world around that vibe. 
 
-Acknowledge here the sources, references, or inspirations that you used for your project. Give credit to the original authors or creators of the materials that you used or adapted for your project (3D models, source code, audio effects, etc.)
 
 ## Contributors
-
-The authors of the project, contact information, and links to their websites or portfolios.
+Jasmine Shahnavazi : Gmail: Jasminesh31@gmail.com
+Johanna Källström  : Gmail: Johannackallstrom@gmail.com
 
 
