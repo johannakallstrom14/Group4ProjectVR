@@ -38,7 +38,7 @@ For example:
 
 Watch the demo video or try the live version.
 
-Link: <https://extralitylab.dsv.su.se/>
+Link: <[https://extralitylab.dsv.su.se/](https://extralitylab.dsv.su.se/project/det/)>
 
 ## Installation
 
