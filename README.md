@@ -45,7 +45,7 @@ To install and run The Forgotten Kingdom on your platform or device, follow the 
 
 | Platform | Device | Requirements | Commands |
 | -------- | ------ | ------------ | -------- |
-| Windows  | Meta Quest   | Unity 6000.3.10f1 or higher, Arduino esp32 thing plus| `git clone [https://github.com/user/repo.git](https://github.com/johannakallstrom14/Group4ProjectVR.git)`<br>`cd project-xr`<br>`open NewBuildJas.unity`<br>`Build and Run` |
+| Windows  | Meta Quest   | Unity 6000.3.10f1 or higher, Arduino esp32 thing plus| `git clone [https://github.com/user/repo.git](https://github.com/johannakallstrom14/Group4ProjectVR.git)`<br>`cd project-xr`<br>`open KingdomBuild.unity`<br>`Build and Run` |
 
 You also need to install the following dependencies or libraries for your project:
 
